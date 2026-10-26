@@ -129,32 +129,6 @@ npx eas-cli@latest build --profile preview --platform ios
 
 ---
 
-## 📤 Instrucciones para subir este proyecto a GitHub
-
-Si aún no has vinculado este proyecto a un repositorio de GitHub:
-
-1. Crea un nuevo repositorio en [GitHub](https://github.com/new) (por ejemplo: `aves-ornamentales`). **No marques** "Add a README" ni "Add .gitignore" ya que el proyecto ya los incluye.
-2. Abre la terminal en la carpeta del proyecto y ejecuta:
-
-```bash
-# 1. Agregar todos los archivos al seguimiento de Git
-git add .
-
-# 2. Crear el primer commit
-git commit -m "feat: Versión inicial Aves Ornamentales MVP"
-
-# 3. Renombrar la rama a main (opcional pero recomendado)
-git branch -M main
-
-# 4. Vincular el repositorio remoto (reemplaza con tu URL de GitHub)
-git remote add origin https://github.com/TU-USUARIO/aves-ornamentales.git
-
-# 5. Subir los cambios a GitHub
-git push -u origin main
-```
-
----
-
 ## 📄 Licencia
 
 Este proyecto está distribuido bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
