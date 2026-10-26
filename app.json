@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Aves Ornamentales",
+    "slug": "aves-ornamentales",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.avesornamentales.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Se necesita acceso a la cámara para fotografiar tus aves.",
+        "NSPhotoLibraryUsageDescription": "Se necesita acceso a las fotos para guardar imágenes de tus aves.",
+        "NSPhotoLibraryAddUsageDescription": "Se necesita acceso para guardar fotos de tus aves.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.avesornamentales.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F1117",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-font",
+      "expo-status-bar",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#D97706",
+          "sounds": [],
+          "mode": "production"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Se necesita acceso a las fotos para guardar imágenes de tus aves.",
+          "cameraPermission": "Se necesita acceso a la cámara para fotografiar tus aves."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "79abee02-7c68-4b1d-bae3-425cfb01fbc5"
+      }
+    },
+    "owner": "yiyivivi"
+  }
+}
